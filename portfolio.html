@@ -1,132 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <title>Shane Lennon: Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico">
 </head>
 
 <body>
 
-<!--Navigation Bar-->
-<nav class="navbar navbar-expand-md navbar-light">
-    <a class="navbar-brand brand-name text-white">Shane Lennon</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<header class="bg-white">
+  <div class="container bg-white" id="navContainer">
+    <nav class="navbar navbar-expand-md navbar-light bg-white noPadding">
+      <a class="navbar-brand navLogo" href="#">
+        <h3 class="font-weight-bold">Shane Lennon</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link navbarMenuDivider" href="./index.html">&nbsp; About &nbsp;</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link navbarMenuDivider" href="./portfolio.html">&nbsp; Portfolio &nbsp; <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">&nbsp; Contact</a>
+          </li>
         </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <div class="container bg-white" id="mainContainer">
+    <div class="row" id="containerTitle">
+      <div class="col">
+        <h3 class="font-weight-bold">Portfolio</h3>
+      </div> 
+        <a href="https://github.com/shane-lennon">
+          <img src="assets/images/github.png" class="rounded float-right socialIcon" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/shane-lenonon-16b887171/">
+          <img src="assets/images/linkdin.jpg" class="rounded float-right socialIcon" alt="LinkedIn">
+        </a>
     </div>
-</nav>
-<!--End Navigation Bar-->
-
-
-      <!-- This link actually does something -->
-      <div class="portfolios">
-        <div class="portfolioBox">  
-
-
-
-<!--Main Section-->
-<main class="container">
-    <div id="contentWrapper">
-        <div id="contentBox" class="clearfix">
-          <div class="clearfix">
-            <div id="sectionTitle">
-              <h5>Portfolio</h5>
-            </div>
-            <div id="iconBlock">
-              <a href="#"><img src="assets/images/gi.jpg" class="socialIcon" alt="GitHub"></a>
-              <a href="#"><img src="assets/images/li.jpg" class="socialIcon" alt="LinkedIn"></a>
-            </div>
+    <div>
+      <hr class="hrFat">
+    </div>
+    <div class="row">
+      <div class="col-10 col-sm-6 col-md-5 offset-1 offset-sm-0 offset-md-1">
+        <div class="outer portfolioVertPadding">
+          <img src="assets/images/train-thumb.jpg" class="img-fluid" alt="train-image">
+          <div class="inner">
+            <a class="btn-lg btn-primary btn-block btnPortfolio text-center" target="_blank" href="https://shane-lennon.github.io/train-schedule/">
+              <h4 class="font-weight-bold">Train Scheduler</h4>
+            </a>
           </div>
-          <hr>
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <img class="card-img img-fluid image-responsive" src="assets/images/hangmand.jpg" alt="hangman-image">
-                        <div class="card-img-overlay">
-                            <a href="https://shane-lennon.github.io/psychic/" class="portfolio-overlay">Hangman</a>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-6">
-                        <img class="card-img img-fluid image-responsive" src="assets/images/giphy.gif" alt="giphy-image">
-                        <div class="card-img-overlay">
-                            <a href="#" class="portfolio-overlay">GifTastic</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <img class="card-img img-fluid image-responsive" src="assets/images/triv.jpg" alt="trivia-image">
-                        <div class="card-img-overlay">
-                            <a href="#" class="portfolio-overlay">Trivia Game</a>
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-lg-6">
-                        <img class="card-img img-fluid image-responsive" src="#" alt="guess-image">
-                        <div class="card-img-overlay">
-                            <a href="https://shane-lennon.github.io/psychic/" class="portfolio-overlay">Guessing Game</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6">
-                        <img class="card-img img-fluid image-responsive" src="assets/images/train-thumb.jpg" alt="train-image">
-                        <div class="card-img-overlay">
-                            <a href="#" class="portfolio-overlay">Train Scheduler</a>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <img class="card-img img-fluid image-responsive" src="assets/images/time-crystals-.jpg" alt="crystal-image">
-                        <div class="card-img-overlay">
-                            <a href="#" class="portfolio-overlay">Crystals Collector</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
+      </div>
+      <div class="col-10 col-sm-6 col-md-5 offset-1 offset-sm-0 offset-md-0">
+        <div class="outer portfolioVertPadding">
+          <img src="assets/images/giphy.gif" class="img-fluid" alt="GifTastic">
+          <div class="inner">
+            <a class="btn-lg btn-primary btn-block btnPortfolio text-center" target="_blank" href="https://shane-lennon.github.io/GifTastic/">
+              <h4 class="font-weight-bold">GifTastic</h4>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-</main>
-<!--End Main Section-->
-
-<!--Footer-->
-<footer>
-    <div class="footer-container">
-        Copyright &copy; 2018 Shane Lennon
+    <div class="row">
+      <div class="col-10 col-sm-6 col-md-5 offset-1 offset-sm-0 offset-md-1">
+        <div class="outer portfolioVertPadding">
+          <img src="assets/images/hangmand.jpg" class="img-fluid" alt="Hangman">
+          <div class="inner">
+            <a class="btn-lg btn-primary btn-block btnPortfolio text-center" target="_blank" href="https://shane-lennon.github.io/unit-4-game/">
+              <h4 class="font-weight-bold">Hangman</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-sm-6 col-md-5 offset-1 offset-sm-0 offset-md-0">
+        <div class="outer portfolioVertPadding">
+          <img src="assets/images/triv.jpg" class="img-fluid" alt="Trivia">
+          <div class="inner">
+            <a class="btn-lg btn-primary btn-block btnPortfolio text-center" target="_blank" href="#">
+              <h4 class="font-weight-bold">Trivia</h4>
+            </a>
+          </div>
+        </div>
+      </div>  
+    </div> 
+    <div class="row">
+      <div class="col-10 col-sm-6 col-md-5 offset-1 offset-sm-0 offset-md-1">
+        <div class="outer portfolioVertPadding">
+          <img src="assets/images/time-crystals-.jpg" class="img-fluid" alt="Crystals Collector">
+          <div class="inner">
+            <a class="btn-lg btn-primary btn-block btnPortfolio text-center" target="_blank" href="#">
+              <h4 class="font-weight-bold">Crystals Collector</h4>
+            </a>
+          </div>      
+        </div>
+      </div>
     </div>
-</footer>
-<!--End Footer-->
+  </div>
 
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  <footer class="footerMain">
+    <div class="container">
+      Copywrite © 2018 Shane Lennon
+    </div>
+  </footer>
 
 </body>
 
